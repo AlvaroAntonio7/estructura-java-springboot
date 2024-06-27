@@ -1,28 +1,29 @@
-package com.example.rent_a_car.entities;
+package com.example.rent_a_car.databaseRepository;
+
 
 import jakarta.persistence.*;
 
-//@Entity
-//@Table(name="clients")
-public class Client {
+@Entity
+@Table(name="clients2")
+public class ClientEntity {
 
     @Id
-    //@Column(name = "id")
+   // @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
    // @Column(name = "first_name")
     private String first_name;
-   // @Column(name = "last_name")
+    //@Column(name = "last_name")
     private String last_name;
-   // @Column(name = "second_last_name")
+    //@Column(name = "second_last_name")
     private String second_last_name;
-   // @Column(name = "document_type")
+    //@Column(name = "document_type")
     private String document_type;
     //@Column(name = "document_number")
     private String document_number;
-   // @Column(name = "birthday")
+    //@Column(name = "birthday")
     private String birthday;
-    //@Column(name = "gender")
+   // @Column(name = "gender")
     private String gender;
 
     public Long getId() {

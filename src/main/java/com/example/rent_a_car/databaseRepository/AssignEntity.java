@@ -1,13 +1,12 @@
-package com.example.rent_a_car.entities;
+package com.example.rent_a_car.databaseRepository;
 
+import jakarta.persistence.*;
 
-//import jakarta.persistence.*;
-
-
-public class Assign {
-
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Entity
+@Table(name="assigns2")
+public class AssignEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String client_id;
     private String vehicle_id;
@@ -45,5 +44,3 @@ public class Assign {
         this.date = date;
     }
 }
-
-
